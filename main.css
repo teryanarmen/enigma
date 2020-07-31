@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto 1rem;
+    width: 80%;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    line-height: 2rem;
+    border: 1px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+    width: 2rem;
+    text-align: center;
+    margin: .2rem;
+}
+
+.spacebar {
+    width: 10rem;
+    height: 2rem;
+}
+
+.blank {
+    border: none;
+}
+
+.textBoxContainer {
+    width: 100%;
+    margin: 1rem auto 1rem;
+    text-align: center;
+}
+
+.textBox {
+    border: 1px black solid;
+    width: 25rem;
+    resize: none;
+    scrollbar-color: black;
+    padding: 0.5rem;
+    height: 2.4rem;
+    text-transform: uppercase;
+}
+
+.crypTitle {
+    margin: 0 auto 0.75rem;
+    width: 100%;
+}
+
+.cryptic {
+    cursor: default;
+}
+
+.cryptic:focus {
+    outline: none;
+}
+
+.pressed {
+    background-color: yellow;
+}
+
+@keyframes flash {
+    0% {}
+    50% {background: yellow;}
+    100% {}
+}
+
+@media screen and (max-width: 750px) {
+    *  {
+        font-size: 15px;
+    }
+}
+

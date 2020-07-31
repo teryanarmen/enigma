@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enigma</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <!-- Settings for Enigma -->
+  <section class="settings">
+    <!-- Select which rotors to use -->
+    <div class="rotors">
+      <select name="rotor1" id="rotor1" class="rotor1_options">
+        <option value="rotor1" class="option">Rotor 1</option>
+        <option value="rotor2" class="option">Rotor 2</option>
+        <option value="rotor3" class="option">Rotor 3</option>
+        <option value="rotor4" class="option">Rotor 4</option>
+        <option value="rotor5" class="option">Rotor 5</option>
+      </select>
+      <select name="rotor2" id="rotor1" class="rotor2_options">
+        <option value="rotor1" class="option">Rotor 1</option>
+        <option value="rotor2" class="option">Rotor 2</option>
+        <option value="rotor3" class="option">Rotor 3</option>
+        <option value="rotor4" class="option">Rotor 4</option>
+        <option value="rotor5" class="option">Rotor 5</option>
+      </select>
+      <select name="rotor3" id="rotor1" class="rotor3_options">
+        <option value="rotor1" class="option">Rotor 1</option>
+        <option value="rotor2" class="option">Rotor 2</option>
+        <option value="rotor3" class="option">Rotor 3</option>
+        <option value="rotor4" class="option">Rotor 4</option>
+        <option value="rotor5" class="option">Rotor 5</option>
+      </select>
+      <select name="reflector" id="reflector" class="reflector_options">
+        <option value="reflector1" class="option">Reflector 1</option>
+        <option value="reflector2" class="option">Reflector 2</option>
+        <option value="reflector3" class="option">Reflector 3</option>
+      </select>
+    </div>
+    <!-- Select where to start the rotors -->
+    <div class="positions">
+      <select name="rotor1_start" id="rotor1_start" class="rotor1_position">
+        <option value="r1_1" class="position">1</option>
+        <option value="r1_2" class="position">2</option>
+        <option value="r1_3" class="position">3</option>
+        <option value="r1_4" class="position">4</option>
+        <option value="r1_5" class="position">5</option>
+        <option value="r1_6" class="position">6</option>
+        <option value="r1_7" class="position">7</option>
+        <option value="r1_8" class="position">8</option>
+        <option value="r1_9" class="position">9</option>
+        <option value="r1_10" class="position">10</option>
+        <option value="r1_11" class="position">11</option>
+        <option value="r1_12" class="position">12</option>
+        <option value="r1_13" class="position">13</option>
+        <option value="r1_14" class="position">14</option>
+        <option value="r1_15" class="position">15</option>
+        <option value="r1_16" class="position">16</option>
+        <option value="r1_17" class="position">17</option>
+        <option value="r1_18" class="position">18</option>
+        <option value="r1_19" class="position">19</option>
+        <option value="r1_20" class="position">20</option>
+        <option value="r1_21" class="position">21</option>
+        <option value="r1_22" class="position">22</option>
+        <option value="r1_23" class="position">23</option>
+        <option value="r1_24" class="position">24</option>
+        <option value="r1_25" class="position">25</option>
+        <option value="r1_26" class="position">26</option>
+      </select>
+      <select name="rotor2_start" id="rotor2_start" class="rotor2_position">
+        <option value="r2_1" class="position">1</option>
+        <option value="r2_2" class="position">2</option>
+        <option value="r2_3" class="position">3</option>
+        <option value="r2_4" class="position">4</option>
+        <option value="r2_5" class="position">5</option>
+        <option value="r2_6" class="position">6</option>
+        <option value="r2_7" class="position">7</option>
+        <option value="r2_8" class="position">8</option>
+        <option value="r2_9" class="position">9</option>
+        <option value="r2_10" class="position">10</option>
+        <option value="r2_11" class="position">11</option>
+        <option value="r2_12" class="position">12</option>
+        <option value="r2_13" class="position">13</option>
+        <option value="r2_14" class="position">14</option>
+        <option value="r2_15" class="position">15</option>
+        <option value="r2_16" class="position">16</option>
+        <option value="r2_17" class="position">17</option>
+        <option value="r2_18" class="position">18</option>
+        <option value="r2_19" class="position">19</option>
+        <option value="r2_20" class="position">20</option>
+        <option value="r2_21" class="position">21</option>
+        <option value="r2_22" class="position">22</option>
+        <option value="r2_23" class="position">23</option>
+        <option value="r2_24" class="position">24</option>
+        <option value="r2_25" class="position">25</option>
+        <option value="r2_26" class="position">26</option>
+      </select>
+      <select name="rotor3_start" id="rotor3_start" class="rotor3_position">
+        <option value="r3_1" class="position">1</option>
+        <option value="r3_2" class="position">2</option>
+        <option value="r3_3" class="position">3</option>
+        <option value="r3_4" class="position">4</option>
+        <option value="r3_5" class="position">5</option>
+        <option value="r3_6" class="position">6</option>
+        <option value="r3_7" class="position">7</option>
+        <option value="r3_8" class="position">8</option>
+        <option value="r3_9" class="position">9</option>
+        <option value="r3_10" class="position">10</option>
+        <option value="r3_11" class="position">11</option>
+        <option value="r3_12" class="position">12</option>
+        <option value="r3_13" class="position">13</option>
+        <option value="r3_14" class="position">14</option>
+        <option value="r3_15" class="position">15</option>
+        <option value="r3_16" class="position">16</option>
+        <option value="r3_17" class="position">17</option>
+        <option value="r3_18" class="position">18</option>
+        <option value="r3_19" class="position">19</option>
+        <option value="r3_20" class="position">20</option>
+        <option value="r3_21" class="position">21</option>
+        <option value="r3_22" class="position">22</option>
+        <option value="r3_23" class="position">23</option>
+        <option value="r3_24" class="position">24</option>
+        <option value="r3_25" class="position">25</option>
+        <option value="r3_26" class="position">26</option>
+      </select>
+    </div>
+    <input class="submit-btn" type="button" value="Submit" name="submit">
+    <input class="random-btn" type="button" value="Random" name="random">
+  </section>
+  <section class="keyboard">
+    <div class="line One">
+      <div class="key Q">Q</div>
+      <div class="key W">W</div>
+      <div class="key E">E</div>
+      <div class="key R">R</div>
+      <div class="key T">T</div>
+      <div class="key Y">Y</div>
+      <div class="key U">U</div>
+      <div class="key I">I</div>
+      <div class="key O">O</div>
+      <div class="key P">P</div>
+    </div>
+    <div class="line Two">
+      <div class="key A">A</div>
+      <div class="key S">S</div>
+      <div class="key D">D</div>
+      <div class="key F">F</div>
+      <div class="key G">G</div>
+      <div class="key H">H</div>
+      <div class="key J">J</div>
+      <div class="key K">K</div>
+      <div class="key L">L</div>
+    </div>
+    <div class="line Three">
+      <div class="key Z">Z</div>
+      <div class="key X">X</div>
+      <div class="key C">C</div>
+      <div class="key V">V</div>
+      <div class="key B">B</div>
+      <div class="key N">N</div>
+      <div class="key M">M</div>
+      <div class="key blank"></div>            
+    </div>
+    <div class="line Four">
+      <div class="key spacebar"></div>
+    </div>
+  </section>
+  <section class="textBoxContainer">
+    <textarea class="textBox"></textarea>
+  </section>
+  
+  <section class="textBoxContainer crypticTextbox">
+    <p class="crypTitle">Encrypted Message</p>
+    <textarea readonly class="textBox cryptic"></textarea>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
